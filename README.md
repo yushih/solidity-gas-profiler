@@ -2,7 +2,7 @@ Profiles gas consumption of a transaction line-by-line.
 
 Uses `debug_traceTransaction`, for which geth must run with `--rpcapi debug,eth` flag. Note that ganache supports this API but the return is different from geth, which I suspect is a bug and will examine further later. Currently does not work with ganache.
 
-Requires sourcemap, which is produced by `solc--combined-json srcmap-runtime`.
+Requires sourcemap, which is produced by `solc --combined-json srcmap-runtime`.
 
 Command line:
 `node profile.js <RPC endpoint> <tx hash> <.sol file path> <sourcemap file path>`
